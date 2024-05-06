@@ -5,9 +5,6 @@ import random
 import csv
 import qrcode
 from datetime import datetime
-font_bold_path = "/path/to/arialbd.ttf"
-font_bold = ImageFont.truetype(font_bold_path, size=16)
-
 
 # Function to generate ID card
 def generate_id_card(name, gender, dob, blood_group, mobile_no, address, profile_image):
@@ -120,6 +117,8 @@ def main():
             
             # Download link for ID card image
             st.markdown(f"Download your ID card [here](data:image/png;base64,{id_number}).")
+    
+    # Additional features can be added here, such as email notifications, export options, etc.
 
 if __name__ == "__main__":
     main()
