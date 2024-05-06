@@ -6,6 +6,12 @@ import csv
 import qrcode
 from datetime import datetime
 
+# Load system fonts
+font_bold = ImageFont.load_default()
+
+# Alternatively, you can specify a different system font size if needed
+# font_bold = ImageFont.load_default().font_variant(size=16)
+
 # Function to generate ID card
 def generate_id_card(name, gender, dob, blood_group, mobile_no, address, profile_image):
     # Generate unique ID number
